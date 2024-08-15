@@ -1,8 +1,10 @@
 
 'use client';
 import Link from 'next/link'
-
+import Navbar from '/app/component/nav';
+import Footer from '/app/component/footer';
 import { useEffect, useState } from 'react';
+
 
 export default function Page() {
   const [items, setItems] = useState([]);
@@ -28,8 +30,8 @@ export default function Page() {
 
   return (
     <>
-
-    <br /><br /><br /><br />
+<Navbar />
+    <br /><br />
     <div className="container">
       <div class="card">
   <div class="card-header">
@@ -65,7 +67,7 @@ export default function Page() {
     </div>
     </div>
     <br /><br />
-
+    <Footer />
     </>
   );
 }
